@@ -81,7 +81,7 @@ public class EmployeeSearchFrame extends JFrame {
 				for(int i = 0; i < dept.length; i++) {
 					department.addElement(dept[i]);
 				}
-				String[] prj = {"ProductX", "ProductY", "ProductZ"};
+				String[] prj = {"ProdoctX", "ProductY", "ProductZ"};
 				for(int j = 0; j < prj.length; j++) {
 					project.addElement(prj[j]);
 				}
