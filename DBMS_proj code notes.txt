@@ -13,10 +13,9 @@ java -cp ".;[connector .jar file path (no quotes, placed in same folder as .java
 
 Program workable
     - to adapt to different db server
-         -make changes in database.properties file
+         -make changes in database.properties file or equivalent .java file
                        db server  url 
                        username (your)
-
                        passwd   (your)
 
 database.properties
@@ -24,6 +23,8 @@ db.url=jdbc:mysql://localhost:3306/COMPANY?useSSL=false&allowPublicKeyRetrieval=
 db.user=username
 db.password=passwd
 
+LOCAL WORKFLOW
 download and install mysql connector and put the .jar file in the same folder
 download Mysql installer and install server, shell, workbench
-work in Mysql cli
+work in Mysql cli (build company schema n values)
+
