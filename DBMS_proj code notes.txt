@@ -16,4 +16,14 @@ Program workable
          -make changes in database.properties file
                        db server  url 
                        username (your)
+
                        passwd   (your)
+
+database.properties
+db.url=jdbc:mysql://localhost:3306/COMPANY?useSSL=false&allowPublicKeyRetrieval=true   (local db server link)
+db.user=username
+db.password=passwd
+
+download and install mysql connector and put the .jar file in the same folder
+download Mysql installer and install server, shell, workbench
+work in Mysql cli
