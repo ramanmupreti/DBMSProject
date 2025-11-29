@@ -66,11 +66,11 @@ public class EmployeeSearchFrame extends JFrame {
     private JTextArea textAreaEmployee;
 
     /**
-	○  Loads database connection properties from the external file
-	○  "database.properties".
+	  Loads database connection properties from the external file
+	  "database.properties".
      *
-	○  @return Properties object containing database URL, username, and password
-	○  @throws Exception if the file cannot be opened or read
+	  @return Properties object containing database URL, username, and password
+	  @throws Exception if the file cannot be opened or read
      */
     private Properties loadDbProperties() throws Exception {
         Properties props = new Properties();
@@ -81,10 +81,10 @@ public class EmployeeSearchFrame extends JFrame {
     }
 
     /**
-	○  Main entry point for the Employee Search application. Launches the GUI on
-	○  the Event Dispatch Thread.
+	  Main entry point for the Employee Search application. Launches the GUI on
+	  the Event Dispatch Thread.
      *
-	○  @param args command-line arguments (unused)
+	  @param args command-line arguments (unused)
      */
     public static void main(String[] args) {
         EventQueue.invokeLater(new Runnable() {
@@ -100,11 +100,11 @@ public class EmployeeSearchFrame extends JFrame {
     }
 
     /**
-	○  Constructor for EmployeeSearchFrame. Builds the full GUI: - Database
-	○  input field - Department and Project lists - IN/NOT checkboxes - Fill,
-	○  Search, and Clear buttons - Employee result text output
+	  Constructor for EmployeeSearchFrame. Builds the full GUI: - Database
+	  input field - Department and Project lists - IN/NOT checkboxes - Fill,
+	  Search, and Clear buttons - Employee result text output
      *
-	○  Also attaches all action listeners for buttons.
+	  Also attaches all action listeners for buttons.
      */
     public EmployeeSearchFrame() {
         setTitle("Employee Search");
@@ -133,12 +133,12 @@ public class EmployeeSearchFrame extends JFrame {
         contentPane.add(scrollEmp);
 
         /**
-		■  Fill button handler. Connects to the database entered in txtDatabase,
-		■  loads all Department names and Project names, and populates the two
-		■  JList components.
+		  Fill button handler. Connects to the database entered in txtDatabase,
+		  loads all Department names and Project names, and populates the two
+		  JList components.
          *
-		■  Displays an error dialog if: - Database doesn't exist - Required
-		■  tables (DEPARTMENT, PROJECT) are missing
+		  Displays an error dialog if: - Database doesn't exist - Required
+		  tables (DEPARTMENT, PROJECT) are missing
          */
         JButton btnDBFill = new JButton("Fill");
         btnDBFill.setFont(new Font("Times New Roman", Font.BOLD, 12));
@@ -259,15 +259,15 @@ public class EmployeeSearchFrame extends JFrame {
         contentPane.add(lblEmployee);
 
         /**
-		■  Search button handler.
+		  Search button handler.
          *
-		■  Builds the correct SQL query based on: - Selected Department -
-		■  Selected Project - IN / NOT IN checkboxes
+		  Builds the correct SQL query based on: - Selected Department -
+		  Selected Project - IN / NOT IN checkboxes
          *
-		■  Executes the query and prints: - Employee first name - Employee last
-		■  name
+		  Executes the query and prints: - Employee first name - Employee last
+		  name
          *
-		■  Prints "No matching employees" if none found.
+		  Prints "No matching employees" if none found.
          */
         JButton btnSearch = new JButton("Search");
         btnSearch.setBounds(90, 320, 89, 23);
@@ -424,8 +424,8 @@ public class EmployeeSearchFrame extends JFrame {
         });
 
         /**
-		■  Clear button handler. Simply removes all text from the employee
-		■  output area.
+		  Clear button handler. Simply removes all text from the employee
+		  output area.
          */
         JButton btnClear = new JButton("Clear");
         btnClear.setBounds(260, 320, 89, 23);
