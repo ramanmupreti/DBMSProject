@@ -1,0 +1,4 @@
+database.properties (file with .properties extension)
+db.baseUrl=jdbc:mysql://localhost:3306/  (local db server link)
+db.user=username
+db.password=passwd

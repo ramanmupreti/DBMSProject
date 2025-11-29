@@ -17,6 +17,7 @@ git pull
 
 git clone
 
+javac -cp ".:mysql-connector-j-9.5.0.jar" EmployeeSearchFrame.java
 
-
+java -cp ".:mysql-connector-j-9.5.0.jar" EmployeeSearchFrame      
 
