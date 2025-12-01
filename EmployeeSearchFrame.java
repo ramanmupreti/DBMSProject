@@ -17,7 +17,13 @@
 •   - Displaying employee results in a scrollable text area
 •   - Handling database and table errors through pop-up dialogs
  *
-•  The database settings are taken from the external file: database.properties
+•  The database settings are taken from the external file: 
+    database.properties
+	
+	 db.baseUrl=jdbc:mysql://localhost:3306/
+     db.user= username
+     db.password = passwd
+   
  */
 
 import java.awt.EventQueue;
